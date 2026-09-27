@@ -1,0 +1,10 @@
+n, k = map(int, input().split())
+
+arr = []
+
+for i in range(n):
+    x1, y1, x2, y2 = map(int, input().split())
+    arr.append(max(x2, y2))
+
+arr.sort()
+print(arr[k - 1])
